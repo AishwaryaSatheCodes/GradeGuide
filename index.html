@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeGuide | Student Evaluator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class = 'header'>
+        <nav>
+            <a href="index.html"> <img src="images/mcoe-logo.png" alt = "mcoe-logo"></a>
+            <div class = "nav-links" id = "navLinks">
+                <i class="fa fa-close" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#login-section">LOGIN</a></li>
+                    <li><a href="">DASHBOARD</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+
+        <div class = "text-box">
+            <h1><img src="images/GradeGuideWhite-removebg.png" alt=""></h1>
+            <p>Welcome to the MCA Department's Student Evaluation System. <br> Log in to get started.</p>
+            <a href="#login-section" class="hero-btn">Login</a>
+        </div>    
+    </section>
+
+    <!--Tools-->
+    <section class = "course">
+        <h1>Tools we Offer</h1>
+        <p>Find out how GradeGuide can help you achieve your Academic goals with our unique planning and tracking technologies.</p>
+        <div class = 'row'>
+            <div class="course-col">
+                <h3>Progress Tracker</h3>
+                <p>The GradeGuide Progress Tracker records your submitted assignments, due dates and helps you finish all your tasks.</p>
+            </div>
+            <div class="course-col">
+                <h3>Result Predictor</h3>
+                <p>GradeGuide's Result Prediction Tool analyses your performance and consistency, and predicts your final SGPA.</p>
+            </div>
+            <div class="course-col">
+                <h3>Attendance Tracking</h3>
+                <p>GradeGuide's Attendance Recorder is useful to generate an overview of your missed lectures, lectures you attended, and your attendance percentage.
+                </p>
+            </div>
+        </div>
+        </section>
+    <!--Login-->
+    <section class="facilities">
+        <h1 id="login-section">Choose your Login Type</h1>
+        <p>If you do not have an Account yet, Sign Up as a Student.</p>
+        <div class="row">
+             
+            <div class="facilities-col">
+                <a href="studentlogin.html"><img src="images/studentlogin.jpg" class="center" alt=""></a>
+                <h3>Login as a Student</h3>
+                
+            </div>
+
+            <div class="facilities-col">
+                <a href="adminlogin.html"><img src="images/adminlogin.jpg" class="center" alt=""></a>
+                <h3>Login as Administrator</h3>
+               
+            </div>
+        </div>
+    </section>    
+
+    <!-- Dev Team -->    
+    <section class="campus">
+        <h3>Our Development Team</h3>
+        <p>Enjoying GradeGuide? Have feedback for the team? Feel free to reach out to the Development Team!</p>
+        <div class="row2">
+            <div class="campus-col">
+                <a href="about.html"><img src = "images/banner.png"></a>
+                <div class="layer">
+                    <h3>Track, Progress, Evaluate, Reflect, Succeed.</h3>
+                </div>
+            </div>
+
+        </div>        
+    </section>
+
+    
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h1>What our Students Say</h1>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/pinkpfp.png" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis possimus accusamus reiciendis eaque, sit id nam quae corrupti laboriosam temporibus. Aliquid eius aspernatur molestias dolore consequuntur vitae aut rem.</p>
+                    <h3>Aishwarya</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <img src="images/pinkpfp.png" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis possimus accusamus reiciendis eaque, sit id nam quae corrupti laboriosam temporibus. Aliquid eius aspernatur molestias dolore consequuntur vitae aut rem.</p>
+                    <h3>Suguna</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <section class="footer">
+    <div class="icons">
+    </div>
+    <p>Made with <i class="fa fa-heart"></i></p>
+   </section>
+
+<!--JavaScript for toggle menu, smaller devices-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
