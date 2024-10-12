@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Student Dashboard | GradeGuide</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <div class="loader">
+      <h1>Loading<span>....</span></h1>
+    </div>
+    <div class="page-content index-page">
+      <div class="sidebar">
+        <div class="brand">
+          <i class="fa-solid fa-xmark xmark"></i>
+          <h3 class="brand-name">GradeGuide</h3>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fa-solid fa-house fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Profile.html" class="sidebar-link">
+              <i class="fa-regular fa-user fa-fw"></i><span>Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Projects.html" class="sidebar-link">
+              <i class="fa-solid fa-calendar fa-fw"></i
+              ><span>Attendance</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Courses.html" class="sidebar-link">
+              <i class="fa-solid fa-chart-simple fa-fw"></i
+              ><span>Progress Graph</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Friends.html" class="sidebar-link">
+              <i class="fa-regular fa-star fa-fw"></i
+              ><span>Result Predictor</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/Friends.html" class="sidebar-link">
+              <i class="fa-solid fa-arrow-right-from-bracket fa-fw"></i>
+              <span>Sign Out</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/settings.html" class="sidebar-link">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <main>
+        <div class="header">
+          <i class="fa-solid fa-bars bar-item"></i>
+          
+
+          <div class="profile">
+            <span class="bell"><i class="fa-regular fa-bell fa-lg"></i></span>
+
+            <img src="./images/avatar.png" alt="No Image" />
+          </div>
+        </div>
+
+                            <!-- PAGE CONTENTS : DASHBOARD -->
+
+        <div class="main-content">
+          <div class="title">
+            <h1>Dashboard</h1>
+          </div>
+          <div class="main-content-boxes">
+<!-- Profile -->
+            <div class="box first-box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Welcome</h2>
+                  <p>Aishwarya Sathe</p>
+                </div>
+                <div class="box-image">
+                  <img src="./images/welcome.png" alt="No image" />
+                </div>
+                <img src="./images/avatar.png" alt="No image" class="avatar" />
+              </div>
+              <div class="box-section2">
+                <ul>
+                  <li>
+                    <span>Aishwarya Sathe</span>
+                    <p>SY-MCA Semester-I</p>
+                  </li>
+                  
+                </ul>
+              </div>
+              <a href="./pages/Profile.html">Profile </a>
+            </div>
+<!-- Quick Draft -->
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Quick Draft</h2>
+                  <p>Write A Draft For Your Ideas</p>
+                </div>
+              </div>
+              <form>
+                <input type="text" placeholder="Title" />
+                <textarea placeholder="Your Thoughts"></textarea>
+                <button type="submit">Save</button>
+              </form>
+            </div>
+<!-- Admin Remarks -->
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Admin Remarks</h2>
+                </div>
+              </div>
+              <div class="latest-news-section2">
+                <div class="latest-news-section2-info">
+                  <h4>Created SASS Section</h4>
+                  <p>New SASS Examples & Tutorials</p>
+                </div>
+                <span>3 Days Ago</span>
+              </div>
+
+              <div class="latest-news-section2">
+                <img src="./images/news-02.png" alt="" />
+                <div class="latest-news-section2-info">
+                  <h4>Changed The Design</h4>
+                  <p>A Brand New Website Design</p>
+                </div>
+                <span>5 Days Ago</span>
+              </div>
+
+              <div class="latest-news-section2">
+                <img src="./images/news-03.png" alt="" />
+                <div class="latest-news-section2-info">
+                  <h4>Team Increased</h4>
+                  <p>3 Developers Joined The Team</p>
+                </div>
+                <span>7 Days Ago</span>
+              </div>
+
+              <div class="latest-news-section2">
+                <img src="./images/news-04.png" alt="" />
+                <div class="latest-news-section2-info">
+                  <h4>Added Payment Gateway</h4>
+                  <p>Many New Payment Gateways Added</p>
+                </div>
+                <span>9 Days Ago</span>
+              </div>
+            </div>
+<!-- Reminders -->
+            <div class="box">
+              <div class="box-section1">
+                <div class="box-title">
+                  <h2>Reminders</h2>
+                </div>
+              </div>
+              <div class="reminders-section2">
+                <div class="reminders">
+                  <h4>Check My Tasks List</h4>
+                  <p>28/09/2022 - 12:00am</p>
+                </div>
+                <div class="reminders">
+                  <h4>Check My Projects</h4>
+                  <p>26/10/2022 - 12:00am</p>
+                </div>
+                <div class="reminders">
+                  <h4>Call All My Clients</h4>
+                  <p>05/11/2022 - 12:00am</p>
+                </div>
+                <div class="reminders">
+                  <h4>Finish The Development Workshop</h4>
+                  <p>20/12/2022 - 12:00am</p>
+                </div>
+              </div>
+            </div>
+           
+            
+        </div>
+        
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
